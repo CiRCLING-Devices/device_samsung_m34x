@@ -33,6 +33,13 @@ PRODUCT_PACKAGES += \
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# FM Radio
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
+
+$(call soong_config_set,libfmjni,vendor,slsi)
+
 # Init
 PRODUCT_PACKAGES += \
     init.m34x.rc \

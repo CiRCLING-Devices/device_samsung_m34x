@@ -26,3 +26,6 @@ TARGET_OTA_ASSERT_DEVICE := f34x,m34x
 
 # DTBO
 BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/m34x.cfg
+
+# FM Radio
+BOARD_HAVE_SLSI_FM := true
