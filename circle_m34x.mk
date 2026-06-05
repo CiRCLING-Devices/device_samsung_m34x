@@ -17,12 +17,12 @@
 # Inherit from m34x device
 $(call inherit-product, device/samsung/m34x/device.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common CiRCLE stuff
+$(call inherit-product, vendor/circle/config/common_full_phone.mk)
 
 # Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := m34x
-PRODUCT_NAME := lineage_m34x
+PRODUCT_NAME := circle_m34x
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M346B2
 PRODUCT_MANUFACTURER := samsung

@@ -31,6 +31,9 @@ PRODUCT_PACKAGES += \
     mixer_gains.xml \
     mixer_paths.xml
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Init
 PRODUCT_PACKAGES += \
     init.m34x.rc \
