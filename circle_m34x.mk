@@ -35,3 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=samsung/m34xjxx/essi:15/AP3A.240905.015.A2/M346B2XUS8DYH1:user/release-keys \
     DeviceProduct=m34xjxx \
     SystemName=m34xjxx
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.product.marketname="Galaxy M34 5G"
