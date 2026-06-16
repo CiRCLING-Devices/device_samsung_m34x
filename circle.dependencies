@@ -2,5 +2,9 @@
     {
         "repository": "device_samsung_s5e8825-common",
         "target_path": "device/samsung/s5e8825-common"
-    }
+    },
+    {
+        "repository": "vendor_samsung_s5e8825-common",
+        "target_path": "vendor/samsung/s5e8825-common"
+    },
 ]
