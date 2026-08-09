@@ -1,40 +1,8 @@
-#
-# Copyright (C) The LineageOS Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-# http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
-# Inherit from m34x device
-$(call inherit-product, device/samsung/m34x/device.mk)
-
 # Inherit some common CiRCLE stuff
 $(call inherit-product, vendor/circle/config/common_full_phone.mk)
 
-# Device identifier, this must come after all inclusions
-PRODUCT_DEVICE := m34x
+# Full device configuration
+$(call inherit-product, device/samsung/m34x/full_m34x.mk)
+
+# Device product
 PRODUCT_NAME := circle_m34x
-PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-M346B2
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_SHIPPING_API_LEVEL := 34
-BOARD_SHIPPING_API_LEVEL := 33
-PRODUCT_CHARACTERISTICS := phone
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="m34xjxx-user 15 AP3A.240905.015.A2 M346B2XUS8DYH1 release-keys" \
-    BuildFingerprint=samsung/m34xjxx/essi:15/AP3A.240905.015.A2/M346B2XUS8DYH1:user/release-keys \
-    DeviceProduct=m34xjxx \
-    SystemName=m34xjxx
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.product.marketname="Galaxy M34 5G"

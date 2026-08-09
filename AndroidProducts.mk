@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/circle_m34x.mk
+    $(LOCAL_DIR)/circle_m34x.mk \
+    $(LOCAL_DIR)/halcyon_m34x.mk
